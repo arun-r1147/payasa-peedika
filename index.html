@@ -99,8 +99,8 @@
                 >
                   <li class="scroll active"><a href="#home">home</a></li>
                   <li class="scroll"><a href="#service">Products</a></li>
-                  <li class="scroll"><a href="#contact">contact</a></li>
                   <li class="scroll"><a href="#pricing">Pricing</a></li>
+                  <li class="scroll"><a href="#contact">contact</a></li>
                 </ul>
               </div>
             </div>
@@ -184,7 +184,7 @@
       <!--/.container-->
     </section>
     <!--service start -->
-    <section id="service" class="service">
+    <!-- <section id="service" class="service">
       <div class="container">
         <div class="service-content">
           <div class="row">
@@ -217,13 +217,12 @@
           </div>
         </div>
       </div>
-      <!--/.container-->
-    </section>
+    </section> -->
     <!--/.service-->
     <!--service end-->
 
     <!--new-cars start -->
-    <section id="new-cars" class="new-cars">
+    <section id="service" class="new-cars">
       <div class="container">
         <div class="section-header">
           <h2>Our Products</h2>
@@ -262,7 +261,7 @@
                         class="welcome-btn new-cars-btn"
                         onclick="window.location.href='#'"
                       >
-                        view details
+                        <span> view details </span>
                       </button>
                     </div>
                     <!--/.new-cars-txt-->
@@ -303,7 +302,7 @@
                         class="welcome-btn new-cars-btn"
                         onclick="window.location.href='#'"
                       >
-                        view details
+                        <span> view details </span>
                       </button>
                     </div>
                     <!--/.new-cars-txt-->
@@ -344,7 +343,7 @@
                         class="welcome-btn new-cars-btn"
                         onclick="window.location.href='#'"
                       >
-                        view details
+                        <span> view details </span>
                       </button>
                     </div>
                     <!--/.new-cars-txt-->
@@ -363,22 +362,81 @@
       </div>
       <!--/.container-->
     </section>
-    <!--/.new-cars-->
-    <!--new-cars end -->
-
-    <!--featured-cars start -->
-
-    <!--/.featured-cars-->
-    <!--featured-cars end -->
-
-    <!-- clients-say strat -->
-    <!--/.clients-say-->
-    <!-- clients-say end -->
-
-    <!--brand strat -->
-
-    <!--/brand-->
-    <!--brand end -->
+    <section id="pricing" class="pricing">
+      <div class="container">
+        <div class="service-content">
+          <div class="row">
+            <div class="section-header">
+              <h2>Our Top selling Products</h2>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="single-service-item">
+                <div class="single-service-icon"></div>
+                <img src="assets/images/payasam/8.jpg" alt="img" />
+                <h2>
+                  <a href="#new-cars">Palada payasam</a>
+                  <a
+                    class="price-tag"
+                    href="https://wa.me/+916282736759?text=Order%20Palada%20payasam%201000%20ml"
+                    target="_blank"
+                  >
+                    <p>1000ml</p>
+                    <p style="font-weight: 700">250/-</p>
+                  </a>
+                  <a
+                    class="price-tag"
+                    href="https://wa.me/+916282736759?text=Order%20Palada%20payasam%20500%20ml"
+                    target="_blank"
+                  >
+                    <p>500ml</p>
+                    <p style="font-weight: 700">130/-</p>
+                  </a>
+                </h2>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="single-service-item">
+                <div class="single-service-icon"></div>
+                <img src="assets/images/payasam/3.jpeg" alt="img" />
+                <h2>
+                  <a href="#new-cars">Paripp Payasam</a>
+                  <a class="price-tag" href="https://wa.me/+916282736759?text=Order%20Parippu%20payasam%201000%20ml"
+                  target="_blank">
+                    <p>1000ml</p>
+                    <p style="font-weight: 700">250/-</p>
+                  </a>
+                  <a class="price-tag" href="https://wa.me/+916282736759?text=Order%20Parippu%20payasam%20500%20ml"
+                  target="_blank">
+                    <p>500ml</p>
+                    <p style="font-weight: 700">130/-</p>
+                  </a>
+                </h2>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="single-service-item">
+                <div class="single-service-icon"></div>
+                <img src="assets/images/payasam/1.jpeg" alt="img" />
+                <h2>
+                  <a href="#new-cars">Gothambu Payasam</a>
+                  <a class="price-tag" href="https://wa.me/+916282736759?text=Order%20Gothambu%20payasam%201000%20ml"
+                  target="_blank">
+                    <p>1000ml</p>
+                    <p style="font-weight: 700">260/-</p>
+                  </a>
+                  <a class="price-tag" href="https://wa.me/+916282736759?text=Order%20gothambu%20payasam%20500%20ml"
+                  target="_blank">
+                    <p>500ml</p>
+                    <p style="font-weight: 700">140/-</p>
+                  </a>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/.container-->
+    </section>
 
     <!--blog start -->
     <section id="blog" class="blog"></section>
@@ -535,13 +593,25 @@
               </div>
             </div>
             <div class="col-md-2 col-sm-6 footer-details">
-              <div class="single-footer-widget" style="display: flex; justify-content:center ;flex-direction: column;
-              align-items: center;">
+              <div
+                class="single-footer-widget"
+                style="
+                  display: flex;
+                  justify-content: center;
+                  flex-direction: column;
+                  align-items: center;
+                "
+              >
                 <h2 style="margin-bottom: 10px">Scan for booking</h2>
                 <ul>
                   <li style="display: flex; justify-content: center">
                     <div style="width: 50%">
-                      <img src="assets/images/ss/qr-code.jpeg" alt="qr code" />
+                      <a href="https://wa.me/+916282736759," target="_blank">
+                        <img
+                          src="assets/images/ss/qr-code.jpeg"
+                          alt="qr code"
+                        />
+                      </a>
                     </div>
                   </li>
                   <li
