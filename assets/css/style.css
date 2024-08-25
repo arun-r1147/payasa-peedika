@@ -350,6 +350,15 @@ nav.navbar.bootsnav .navbar-toggle i{color:  #fff;;}
         5. Service 
 --------------------------------------*/
 .service { padding: 160px 0 87px;}
+@media screen and (max-width: 1008px) {
+    .service { padding: 40px 0 20px !important}
+    .single-service-item{
+        padding:10px !important ;
+    }
+    .single-service-item h2 a {
+        margin: 10px  10px!important;
+    }
+}
 
 .single-service-item{
     text-align: center;
@@ -400,7 +409,15 @@ nav.navbar.bootsnav .navbar-toggle i{color:  #fff;;}
 .new-cars{
     background: #f8f9fb;
     padding:112px 0 120px;
+   
 }
+    @media screen and (max-width: 1008px) {
+        .new-cars{
+            padding:40px 0 20px !important;  
+        }
+        .new-cars-content{padding-top:20px !important;}
+        .new-cars-txt {margin-bottom: 0px !important}
+    }
 .new-cars-content{padding-top:96px;}
 /*.new-cars-txt*/
 .new-cars-txt {margin-left: 29px;margin-bottom: 30px;}
@@ -414,6 +431,11 @@ nav.navbar.bootsnav .navbar-toggle i{color:  #fff;;}
 .welcome-btn.new-cars-btn {
     width: 176px;
     margin-top: 32px;
+}
+@media screen and (max-width: 1200px) {
+    .welcome-btn.new-cars-btn {
+        display: none;
+    }
 }
 /*.new-cars-txt*/
 
@@ -429,6 +451,9 @@ nav.navbar.bootsnav .navbar-toggle i{color:  #fff;;}
 .new-cars .owl-theme .owl-dots .owl-dot.active span,.new-cars .owl-theme .owl-dots .owl-dot:hover span {background: #6a7781;}
 .new-cars .owl-theme .owl-nav.disabled+.owl-dots {margin-top: 62px;}
 /*.owl-dots */
+@media screen and (max-width: 1200px) {
+    .new-cars .owl-theme .owl-nav.disabled+.owl-dots {margin-top: 10px !important}
+}
 
 /*-------------------------------------
         7. Featured-cars
@@ -546,6 +571,11 @@ nav.navbar.bootsnav .navbar-toggle i{color:  #fff;;}
 .brand{
     padding: 120px 0 0px;
 }
+@media screen and (max-width: 1008px) {
+    .brand{
+        padding: 20px 0 0px !important;
+    }
+}
 .brand-area {
     position:relative;
 }
@@ -571,6 +601,11 @@ nav.navbar.bootsnav .navbar-toggle i{color:  #fff;;}
 }
 .footer-top {padding: 112px 0 72px;}
 
+
+@media screen and (max-width: 1008px) {
+    .footer-top {padding: 50px 0 40px !important}
+}
+
 /*.footer-logo*/
 .footer-logo a,.footer-logo a:hover,.footer-logo a:focus{
     display: inline-block;
@@ -580,6 +615,15 @@ nav.navbar.bootsnav .navbar-toggle i{color:  #fff;;}
     font-family: 'Rufina', serif;
     font-weight: 700;
     text-transform:uppercase;
+}
+
+@media screen and (max-width: 1008px) {
+.single-footer-widget{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 }
 .single-footer-widget p {
     font-size: 14px;
