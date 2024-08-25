@@ -24,7 +24,7 @@ a,
 a:hover,
 a:active,
 a:focus {
-    display: inline-block;
+    /* display: inline-block; */
     text-decoration: none;
     color: #444a57;
     font-size: 20px;
@@ -96,6 +96,7 @@ body {
 .owl-carousel {
     z-index: 0;
 }
+
 .section-header {
     position: relative;
     text-align: center;
@@ -397,24 +398,92 @@ nav.navbar.bootsnav .navbar-toggle i {
     display: inline-block;
     color: #50616c;
 }
+.single-service-item h2 {
+    margin: 20px 0 0px;
+}
 .single-service-item h2 a {
     font-size: 20px;
-    margin: 35px 0 20px;
+    margin: 20px 0 0px;
 }
 .single-service-item h2 a span {
     text-transform: lowercase;
 }
 .single-service-item p {
-    padding-bottom: 5px;
     text-transform: initial;
     position: relative;
 }
 
 .price-tag {
     display: flex;
-    width: 100%;
     justify-content: space-between;
-    padding: 0 65px;
+    padding: 5px 50px !important;
+    flex-direction: row;
+    border: 1px solid #bfc3d3;
+    border-radius: 4px;
+    position: relative;
+
+    &:hover {
+        color: #ffffff !important;
+        background-color: #2a2d54;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 2px solid rgb(204, 204, 204);
+        animation: clippath 5s infinite linear;
+    }
+}
+@keyframes clippath {
+    0%,
+    100% {
+        clip-path: inset(0 0 95% 0);
+    }
+    25% {
+        clip-path: inset(0 95% 0 0);
+    }
+    50% {
+        clip-path: inset(95% 0 0 0);
+    }
+    75% {
+        clip-path: inset(0 0 0 95%);
+    }
+}
+
+
+/* .price-tag {
+    width: 250%;
+    height: 350%;
+    position: absolute;
+    z-index: -10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: conic-gradient(
+        transparent,
+        transparent,
+        transparent,
+        rgb(214, 214, 214),
+        rgb(252, 252, 208),
+        transparent,
+        transparent,
+        transparent
+    );
+    animation: rotate 5s infinite linear;
+} */
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
 .pricing {
     padding-top: 50px;
@@ -425,29 +494,9 @@ nav.navbar.bootsnav .navbar-toggle i {
     }
 }
 
-.single-service-icon [class^="flaticon-"]:before,
-.single-service-icon[class*=" flaticon-"]:before,
-.single-service-icon [class^="flaticon-"]:after,
-.single-service-icon [class*=" flaticon-"]:after {
-    font-size: 60px;
-}
-.single-service-item:hover .single-service-icon [class^="flaticon-"]:before,
-.single-service-item:hover .single-service-icon [class*=" flaticon-"]:before,
-.single-service-item:hover .single-service-icon [class^="flaticon-"]:after,
-.single-service-item:hover .single-service-icon [class*=" flaticon-"]:after {
-    color: #fff;
-}
-
-.single-service-item:hover h2 a,
-.single-service-item:hover p {
-    color: #fff;
-}
-.single-service-item:hover p:before {
-    background: #fff;
-}
 .single-service-item:hover {
     box-shadow: 0 12px 30px 0px rgba(0, 1, 193, 0.2);
-    background: #6a7781;
+    /* background: #6a7781; */
     border: 1px solid #6a7781;
 }
 
@@ -730,7 +779,7 @@ nav.navbar.bootsnav .navbar-toggle i {
     display: inline-block;
     color: #fff;
     font-size: 24px;
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
     font-family: "Rufina", serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -926,5 +975,152 @@ nav.navbar.bootsnav .navbar-toggle i {
         display: flex;
         width: 100% !important;
         justify-content: center;
+    }
+}
+
+
+.area {
+    background: transparent;
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+    width: 100%;
+}
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+    left: 40%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+    left: 75%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+    left: 35%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+    left: 85%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+.circles li:nth-child(11) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}.circles li:nth-child(12) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}.circles li:nth-child(13) {
+    left: 20%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}.circles li:nth-child(14) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}.circles li:nth-child(15) {
+    left: 20%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
     }
 }
