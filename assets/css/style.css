@@ -531,7 +531,7 @@ nav.navbar.bootsnav .navbar-toggle i {
     text-transform: uppercase;
 }
 .new-cars-para2 {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 .welcome-btn.new-cars-btn {
     width: 176px;
@@ -750,7 +750,7 @@ nav.navbar.bootsnav .navbar-toggle i {
     position: relative;
 }
 .brand-area .item {
-    padding: 0 40px 0;
+    padding: 0 15px 0;
 }
 
 .brand .brand-area .owl-carousel .owl-item img {
